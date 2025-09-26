@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Nível Avançado: duas cartas, cálculos (densidade, PIB per capita, super poder) e comparações.
+// Nível Mestre: duas cartas, cálculos (densidade, PIB per capita, super poder) e comparações.
 // Observações:
 // - População agora é unsigned long int.
 // - PIB continua em bilhões de reais (entrada). Para PIB per capita, convertemos para reais (x 1e9).
@@ -130,7 +130,7 @@ int main() {
     int cmp_pc    = (pib_pc1 > pib_pc2);
     int cmp_super = (super1 > super2);
 
-    // Tabela de mensagens indexada por 0/1 (evita if/else na impressão)
+    // Tabela de mensagens indexada por 0/1 
     const char* venceu[2] = { "Carta 2 venceu (0)", "Carta 1 venceu (1)" };
 
     printf("\n=== Comparacao de Cartas ===\n");
